@@ -1,0 +1,141 @@
+
+section {
+    height: 100vh;
+}
+
+nav {
+    background: linear-gradient(green,white,white,white,red);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#watchYour {
+    animation-name: watch;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes watch {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes changeDeg {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(2deg);
+    }
+    40% {
+        transform: rotate(-2deg);
+    }
+    60% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes changeBackground {
+    0% {
+        background: linear-gradient(rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169));
+    }
+    10% {
+        background: linear-gradient(rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169));
+    }
+    20% {
+        background: linear-gradient(rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169));
+    }
+    30% {
+        background: linear-gradient(rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169));
+    }
+    40% {
+        background: linear-gradient(rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169));
+    }
+    50% {
+        background: linear-gradient(rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24));
+    }
+    60% {
+        background: linear-gradient(rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24));
+    }
+    70% {
+        background: linear-gradient(rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24));
+    }
+    80% {
+        background: linear-gradient(rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24),rgb(1, 200, 24));
+    }
+    90% {
+        background: linear-gradient(rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(1, 200, 24));
+    }
+    100% {
+        background: linear-gradient(rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(1, 200, 24),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169),rgb(0, 101, 169));
+    }
+}
+
+.nav-item a{
+    transition: 1s;
+}
+
+.nav-item:hover > a{
+    color: rgb(192, 68, 68);
+}
+
+#ashu:hover {
+    background: linear-gradient(rgb(255, 0, 0),rgb(184, 110, 110),rgb(255, 115, 0));
+}
+
+
+
+body {
+    /* background: linear-gradient(rgb(1, 140, 233),rgb(112, 237, 253)); */
+    background: linear-gradient(rgb(0, 101, 169),rgb(112, 253, 128));
+}
+
+.background {
+    background: linear-gradient(rgb(1, 200, 24),rgb(0, 101, 169));
+    transition: 0.5s;
+    animation-name: changeBackground ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.myHov{
+    transition: 1s;
+    animation-name: changeDeg ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.icons  li{
+    display: inline;
+}
+
+li {
+    list-style: none;
+}

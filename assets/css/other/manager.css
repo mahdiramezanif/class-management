@@ -1,0 +1,37 @@
+.bg-red{
+    background-color: #B85042;
+}
+
+.btn{
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.text-red{
+    color: #B85042;
+}
+
+.btn-red{
+    background-color: #B85042;
+    color: white;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+.btn-red:hover{
+    transform: scale(1.25);
+    background-color: #B85042;
+    color: white;
+}
+
+.bg-light-be{
+    background-color: #E7E8D1;
+}
+
+.bg-teal{
+    background-color: #A7BEAE;
+}

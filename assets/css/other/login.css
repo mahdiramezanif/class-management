@@ -1,0 +1,16 @@
+section {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(rgb(0, 101, 169),rgb(112, 253, 128));
+}
+
+.formDiv {
+    background:linear-gradient(rgb(177, 3, 252),#d703fc,#fc03db,#fc0384) ;
+    transition: 0.5s;
+    width: 30%;
+    text-align: justify;
+    /* min-width: 32.5%;
+    min-height: 40%; */
+}
