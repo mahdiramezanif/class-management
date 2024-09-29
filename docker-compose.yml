@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./backend:/app
+    environment:
+      DATABASE_URL: postgresql://root:OKaitVPJFl73zKwYMO2sY8Xz@lessen:5432/postgres
+      # سایر متغیرهای محیطی مرتبط با بک‌اند شما
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+
+volumes:
+  # در اینجا نیازی به volumes برای دیتابیس ندارید
